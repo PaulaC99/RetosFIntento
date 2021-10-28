@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Reto 3 - Paula Cárdenas </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src= "js/funcionesClient.js"></script>
+        <script type="text/javascript" src= "js/funcionesBoat.js"></script>
+        <script type="text/javascript" src= "js/funcionesMessage.js"></script>
+        <script type="text/javascript" src= "js/funcionesCategory.js"></script>
+        <script type="text/javascript" src= "js/funcionesReservation.js"></script>
+    </head>
+    <body>
+        <h1> ¡Alquile un barco con nosotros!</h1>
+        <h2> </h2>
+        <h4> Presione el botón de consultar para acceder a la base de datos, luego rellene el formulario y presione el botón de la acción que quiere realizar</h4>
+        <h2> </h2>
+        <h2> </h2>
+        <h2> </h2>
+        <h5> Base de datos: Cliente </h5>
+        <h2> </h2>
+        <div id="resultadoC"></div>
+        <h2> </h2>
+        <button onclick="traerInfoClient()" style="background-color:rgb(164, 167, 164)"> Consultar Clientes</button>
+        <div>
+            <input type="text" id="nameC" placeholder="name:">
+            <input type="email" id="emailC" placeholder="email:">
+            <input type="text" id="passwordC" placeholder="password:">
+            <input type="number" id="ageC" placeholder="age:">
+            <h2> </h2>
+        </div>
+        <button onclick="guardarInfoClient()" style="background-color:rgb(118, 216, 118)"> Guardar </button>
+        <button onclick="actualizarInfoClient()" style="background-color:rgb(113, 113, 206)"> Actualizar </button>
+        <button onclick="borrarInfoClient()" style="background-color:rgb(223, 102, 86)"> Eliminar </button>
+        <h2> </h2>
+        <h2> </h2>
+        <h2> </h2>
+        <h5> Base de datos: Barcos </h5>
+        <h2> </h2>
+        <div id="resultadoB"></div>
+        <h2> </h2>
+        <button onclick="traerInfoBoat()" style="background-color:rgb(164, 167, 164)"> Consultar Barcos </button>
+        <div>
+            <input type="text" id="brandB" placeholder="brand:">
+            <input type="number" id="yearB" placeholder="year:">
+            <input type="text" id="descriptionB" placeholder="description:">
+            <input type="text" id="nameB" placeholder="name:">
+            <h2> </h2>
+        </div>
+        <button onclick="guardarInfoBoat()" style="background-color:rgb(118, 216, 118)"> Guardar </button>
+        <button onclick="actualizarInfoBoat()" style="background-color:rgb(113, 113, 206)"> Actualizar </button>
+        <button onclick="borrarInfoBoat()" style="background-color:rgb(223, 102, 86)"> Eliminar </button>
+        <h2> </h2>
+        <h2> </h2>
+        <h2> </h2>
+        <h5> Base de datos: Message </h5>
+        <h2> </h2>
+        <div id="resultadoM"></div>
+        <h2> </h2>
+        <button onclick="traerInfoMessage()" style="background-color:rgb(164, 167, 164)"> Consultar Mensajes</button>
+        <div>
+            <input type="text" id="messagetextM" placeholder="message:">
+            <input type="text" id="clientM" placeholder="client:">
+            <input type="text" id="boatM" placeholder="boat:">
+            <h2> </h2>
+        </div>
+        <button onclick="guardarInfoMessage()" style="background-color:rgb(118, 216, 118)"> Guardar </button>
+        <button onclick="actualizarInfoMessage()" style="background-color:rgb(113, 113, 206)"> Actualizar </button>
+        <button onclick="borrarInfoMessage()" style="background-color:rgb(223, 102, 86)"> Eliminar </button>
+        <h2> </h2>
+        <h2> </h2>
+        <h2> </h2>
+        <h5> Base de datos: Categorias </h5>
+        <h2> </h2>
+        <div id="resultadoCT"></div>
+        <h2> </h2>
+        <button onclick="traerInfoCategory()" style="background-color:rgb(164, 167, 164)"> Consultar Categorias</button>
+        <div>
+            <input type="text" id="nameCT" placeholder="name:">
+            <input type="text" id="descriptionCT" placeholder="description:">
+            <h2> </h2>
+        </div>
+        <button onclick="guardarInfoCategory()" style="background-color:rgb(118, 216, 118)"> Guardar </button>
+        <button onclick="actualizarInfoCategory()" style="background-color:rgb(113, 113, 206)"> Actualizar </button>
+        <button onclick="borrarInfoCategory()" style="background-color:rgb(223, 102, 86)"> Eliminar </button>
+        <h2> </h2>
+        <h2> </h2>
+        <h2> </h2>
+        <h5> Base de datos: Reservaciones </h5>
+        <h2> </h2>
+        <div id="resultadoRR"></div>
+        <h2> </h2>
+        <button onclick="traerInfoReservation()" style="background-color:rgb(164, 167, 164)"> Consultar Reservaciones</button>
+        <div>
+            <input type="date" id="startDateRR" placeholder="start Date:">
+            <input type="date" id="devolutionDateRR" placeholder="devolution Date:">
+            <input type="text" id="clientRR" placeholder="client:">
+            <input type="text" id="boatRR" placeholder="boat:">
+            <h2> </h2>
+        </div>
+        <button onclick="guardarInfoReservation()" style="background-color:rgb(118, 216, 118)"> Guardar </button>
+        <button onclick="actualizarInfoReservation()" style="background-color:rgb(113, 113, 206)"> Actualizar </button>
+        <button onclick="borrarInfoReservation()" style="background-color:rgb(223, 102, 86)"> Eliminar </button>
+    </body>
+</html>
